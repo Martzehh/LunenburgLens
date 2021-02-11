@@ -1,0 +1,220 @@
+/* Color variables */
+:root {
+    --slate: #EFEFEF;
+    --darkslate: #1F2D2E;
+    --teal: #D4EDEA;
+    --peach: #C57B58;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand, .nav-item {
+    font-family: 'Noto Serif', serif;
+}
+
+.navbar-brand {
+    font-style: italic;
+    font-size: 1.35rem;
+}
+
+.nav-item {
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* MAIN PAGE BANNER BEGINS */
+.banner-one {
+    background-image: url(../imgs/banner_1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    transition: 750ms linear;
+    z-index: 0;
+}
+
+.banner-two {
+    background-image: url(../imgs/banner_2.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    transition: 750ms linear;
+    z-index: 0;
+}
+
+.banner-three {
+    background-image: url(../imgs/banner_3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    transition: 750ms linear;
+    z-index: 0;
+}
+
+.shadow-box {
+    height: 100%;
+    width: 100%;
+    background-color: var(--darkslate);
+    opacity: 30%;
+    z-index: 1;
+}
+
+#font-logo {
+    transform: translateY(-10%);
+    height: 70%;
+    width: auto;
+    z-index: 5;
+}
+
+#font-subheader {
+    bottom: 27%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 1rem;
+    color: white;
+    z-index: 5;
+}
+
+.lander-page {
+    position: absolute;
+    bottom: 23%;
+}
+/* Standardized style bar used under text on each page */
+.style-bar {
+    height: 1rem;
+    width: 11rem;
+    z-index: 5;
+}
+
+.peach {
+    background-color: var(--peach);
+}
+/* MAIN PAGE BANNER ENDS */
+
+/* INTRO BANNER BEGINS */
+
+.window {
+    background-image: url(../imgs/brown_swoosh.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--slate);
+    overflow: hidden;
+}
+
+.welcome-box {
+    position: relative;
+}
+
+.styled-border {
+    position: absolute;
+    bottom: 30px;
+    height: 90%;
+    width: 90%;
+    z-index: 10;
+    border: 3px solid white;
+}
+
+.welcome-banner {
+    background-image: url(../imgs/header-img.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 250px;
+    border-top-left-radius: 250px;
+    height: 80%;
+    width: 80%;
+}
+
+.welcome-text {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 6rem;
+    color: var(--darkslate);
+}
+
+.welcome-paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.35rem;
+    color: var(--darkslate);
+}
+
+#style-paragraph {
+    position: relative;
+    display: inline-block;
+}
+
+.intro-page {
+    position: absolute;
+    right: 0;
+    bottom: -20%;
+}
+
+.slate {
+    background-color: var(--darkslate);
+}
+
+/* INTRO BANNER BEGINS */
+
+@media only screen and (max-width: 1025px){
+    /* INTRO BANNER QUERIES BEGIN */
+    .welcome-text {
+        font-size: 5rem;
+    }
+
+    .welcome-paragraph {
+        font-size: 2rem;
+    }
+
+    .welcome-banner {
+        height: 70%;
+        margin-bottom: 5rem!important;
+    }
+
+    .styled-border {
+        height: 80%;
+        bottom: 50px;
+    }
+    /* INTRO BANNER QUERIES END */
+
+    #font-logo {
+        height: auto;
+        width: 100%;
+    }
+
+    #font-subheader {
+        font-size: 2.5rem;
+        letter-spacing: .75rem;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    #introduction {
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #font-subheader {
+        bottom: 35%;
+        font-size: 2rem;
+        letter-spacing: .35rem;
+    }
+
+    .lander-page {
+        bottom: 30%;
+    }
+}
+
