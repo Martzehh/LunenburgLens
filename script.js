@@ -13,6 +13,6 @@ const slideshow = () => {
         } else {
             counter = 0;
         }
-    }, 1000);
+    }, 4000);
 }
 slideshow();
