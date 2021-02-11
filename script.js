@@ -5,14 +5,15 @@ const slideshow = () => {
     let counter = 0;
     setInterval(function() {
         if (counter === 0) {
-            landingPage.classList.toggle("banner-two");
+            landingPage.classList.replace("banner-one", "banner-two");
             counter++;
         } else if(counter === 1) {
-            landingPage.classList.toggle("banner-three");
+            landingPage.classList.replace("banner-two", "banner-three");
             counter++;
         } else {
+            landingPage.classList.replace("banner-three", "banner-one");
             counter = 0;
         }
-    }, 4000);
+    }, 2000);
 }
 slideshow();
