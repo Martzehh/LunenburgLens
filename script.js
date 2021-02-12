@@ -5,13 +5,13 @@ const slideshow = () => {
     let counter = 0;
     setInterval(function() {
         if (counter === 0) {
-            landingPage.classList.replace("banner-one", "banner-two");
+            landingPage.classList.replace("one", "two");
             counter++;
-        } else if(counter === 1) {
-            landingPage.classList.replace("banner-two", "banner-three");
+        } else if (counter === 1){
+            landingPage.classList.replace("two", "three");
             counter++;
         } else {
-            landingPage.classList.replace("banner-three", "banner-one");
+            landingPage.classList.replace("three", "one");
             counter = 0;
         }
     }, 2000);

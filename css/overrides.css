@@ -10,57 +10,63 @@ html {
     overflow-x: hidden;
 }
 
-.navbar {
-    background-color: white;
-}
+/*.navbar {*/
+/*    background-color: white;*/
+/*}*/
 
-.navbar-brand, .nav-item {
-    font-family: 'Noto Serif', serif;
-}
+/*.navbar-brand, .nav-item {*/
+/*    font-family: 'Noto Serif', serif;*/
+/*}*/
 
-.navbar-brand {
-    font-style: italic;
-    font-size: 1.35rem;
-}
+/*.navbar-brand {*/
+/*    font-style: italic;*/
+/*    font-size: 1.35rem;*/
+/*}*/
 
-.nav-item {
-    font-style: normal;
-    font-size: 1.2rem;
-}
+/*.nav-item {*/
+/*    font-style: normal;*/
+/*    font-size: 1.2rem;*/
+/*}*/
 
-.nav-item:hover {
-    text-decoration: underline;
-}
+/*.nav-item:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
 
 /* MAIN PAGE BANNER BEGINS */
-.banner-one {
+#preload-1 {
+    background: url(../imgs/banner_1.jpeg) no-repeat -9999px -9999px;
+}
+
+#preload-2 {
+    background: url(../imgs/banner_2.jpeg) no-repeat -9999px -9999px;
+}
+
+#preload-3 {
+    background: url(../imgs/banner_3.jpg) no-repeat -9999px -9999px;
+}
+.banner {
+    background-image: url(../imgs/banner_1.jpeg);
+    height: 100vh;
+    width: 100vw;
+    transition: 1000ms ease-out;
+}
+
+.one {
     background-image: url(../imgs/banner_1.jpeg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    transition: 1500ms ease-out;
-    z-index: 0;
 }
 
-.banner-two {
+.two {
     background-image: url(../imgs/banner_2.jpeg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    transition: 1500ms ease-out;
-    z-index: 0;
 }
 
-.banner-three {
+.three {
     background-image: url(../imgs/banner_3.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    transition: 1500ms ease-out;
-    z-index: 0;
 }
 
 .shadow-box {
