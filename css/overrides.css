@@ -44,6 +44,7 @@ html {
 #preload-3 {
     background: url(../imgs/banner_3.jpg) no-repeat -9999px -9999px;
 }
+
 .banner {
     background-image: url(../imgs/banner_1.jpeg);
     height: 100vh;
