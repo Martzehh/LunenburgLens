@@ -14,6 +14,6 @@ const slideshow = () => {
             landingPage.classList.replace("three", "one");
             counter = 0;
         }
-    }, 2000);
+    }, 4000);
 }
 slideshow();
