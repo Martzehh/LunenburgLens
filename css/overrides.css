@@ -39,7 +39,7 @@ html {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    transition: 500ms ease-out;
+    transition: 1500ms ease-out;
     z-index: 0;
 }
 
@@ -49,7 +49,7 @@ html {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    transition: 500ms ease-out;
+    transition: 1500ms ease-out;
     z-index: 0;
 }
 
@@ -59,7 +59,7 @@ html {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    transition: 500ms ease-out;
+    transition: 1500ms ease-out;
     z-index: 0;
 }
 
