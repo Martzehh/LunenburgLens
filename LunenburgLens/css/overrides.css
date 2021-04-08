@@ -4,6 +4,7 @@
     --darkslate: #1F2D2E;
     --teal: #D4EDEA;
     --peach: #C57B58;
+    --maroon: #AB6D69;
 }
 
 html {
@@ -11,29 +12,178 @@ html {
     overflow-x: hidden;
 }
 
-/*.navbar {*/
-/*    background-color: white;*/
-/*}*/
+/* NAVBAR BEGINS */
 
-/*.navbar-brand, .nav-item {*/
-/*    font-family: 'Noto Serif', serif;*/
-/*}*/
+nav {
+    z-index: 9999;
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
 
-/*.navbar-brand {*/
-/*    font-style: italic;*/
-/*    font-size: 1.35rem;*/
-/*}*/
+.basic-nav {
+    list-style: none;
+    margin: 0 4rem 0 0 ;
+    user-select: none;
+}
 
-/*.nav-item {*/
-/*    font-style: normal;*/
-/*    font-size: 1.2rem;*/
-/*}*/
+.basic-nav li {
+    position: relative;
+    display: inline;
+    color: var(--slate);
+    letter-spacing: .15rem;
+    margin: 0 1.5rem;
 
-/*.nav-item:hover {*/
-/*    text-decoration: underline;*/
-/*}*/
+}
+
+.basic-nav a {
+    position: relative;
+    text-decoration: none;
+    color: var(--slate);
+    padding-bottom: 3px;
+}
+
+.basic-nav a:after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    bottom: -7px;
+    width: 0;
+    height: 4px;
+    transform: scale(0);
+    transition: linear 150ms;
+    background-color: var(--maroon);
+    z-index: 9999;
+}
+
+.basic-nav a:hover:after {
+    width: 50%;
+    transform: scale(1);
+}
+
+/* NAVBAR ENDS */
+
+/* EXPLORE BLOCK BEGINS */
+
+.explore {
+    background-color: var(--darkslate);
+    height: 20rem;
+}
+
+.explore-title {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400!important;
+    color: var(--slate);
+    letter-spacing: .1rem;
+}
+
+.explore-button {
+    font-family: 'Open Sans', sans-serif;
+    padding: .75rem 3rem;
+    background-color: var(--maroon);
+    text-decoration: none;
+    color: var(--slate);
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.explore-button:hover {
+    color: var(--darkslate);
+}
+
+/* EXPLORE BLOCK ENDS */
+
+/* INDEX TEXTBOX BEGINS */
+
+.index-textbox {
+    background-image: url(../imgs/index_background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.index-banner {
+    background-image: url("../imgs/index_headshot.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 75%;
+}
+
+.index-intro {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+}
+
+/* INDEX TEXTBOX ENDS */
+
+/* PORTFOLIO DEMO BEGINS */
+
+.demo-img {
+    height: 100%;
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+    transition: 250ms linear;
+}
+
+.demo-img:hover {
+    filter: brightness(100%);
+}
+
+.demo-one {
+    background-image: url("../imgs/demo_imgs/demo_1.jpg");
+
+}
+
+.demo-two {
+    background-image: url("../imgs/demo_imgs/demo_2.jpg");
+}
+
+.demo-three {
+    background-image: url("../imgs/demo_imgs/demo_3.jpg");
+}
+
+.porfolio-demo-title {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal!important;
+    font-size: 2rem;
+    color: var(--slate);
+    letter-spacing: .2rem;
+}
+
+.porfolio-demo-title:after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    bottom: -10px;
+    width: 50%;
+    height: 5px;
+    background-color: var(--peach);
+}
+
+/* PORTFOLIO DEMO ENDS */
+
+/* TESTIMONIAL BLOCK BEGINS */
+
+
+
+/* TESTIMONIAL BLOCK ENDS */
 
 /* MAIN PAGE BANNER BEGINS */
+
+/* The following is a workaround I'm using at the moment to solve the initial page loading issues.
+   I would like to perhaps make this a little cleaner by adding a loading modal. */
 #preload-1 {
     background: url(../imgs/banner_1.jpeg) no-repeat -9999px -9999px;
 }
@@ -115,13 +265,22 @@ html {
 /* INTRO BANNER BEGINS */
 
 .window {
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    height: 45rem;
+    width: 100vw;
+    background-color: var(--slate);
+    overflow: hidden;
+}
+
+.half {
+    height: 30rem;
+}
+
+.about-textbox {
     background-image: url(../imgs/brown_swoosh.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--slate);
-    overflow: hidden;
 }
 
 .welcome-box {
@@ -197,12 +356,23 @@ html {
 /* Map image still needs some work */
 #map-img {
     width: 100%;
-    height: auto;
+    height: 150px;
+    background-image: url("../imgs/map.jpeg");
+    background-position: center;
+    background-size: cover;
 }
 
-/* INTRO BANNER BEGINS */
+@media only screen and (max-width: 1250px) {
+
+    .index-textbox {
+        display: none;
+    }
+
+}
 
 @media only screen and (max-width: 1025px){
+
+
     /* INTRO BANNER QUERIES BEGIN */
     .welcome-text {
         font-size: 5rem;
@@ -235,6 +405,7 @@ html {
 }
 
 @media only screen and (max-width: 995px) {
+
     #introduction {
         display: none!important;
     }
@@ -250,6 +421,5 @@ html {
     .lander-page {
         bottom: 30%;
     }
-
 }
 

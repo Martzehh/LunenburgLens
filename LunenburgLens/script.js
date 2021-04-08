@@ -1,5 +1,6 @@
 const landingPage = document.getElementById("landing-page");
 
+// Define a basic function that cyles through image classes defined in the overrides.css document
 const slideshow = () => {
 // Basic function to toggle landing page background images.
     let counter = 0;
