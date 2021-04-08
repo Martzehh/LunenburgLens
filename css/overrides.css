@@ -176,7 +176,44 @@ nav {
 
 /* TESTIMONIAL BLOCK BEGINS */
 
+.testimonial-block {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    letter-spacing: .075rem;
+    background-color: var(--darkslate);
+    color: var(--slate);
+}
 
+.testimonial-text {
+}
+
+.testimonial-text:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 30px;
+    color: #ccc;
+    font-size: 3em;
+}
+.testimonial-text:after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 10px;
+    position: relative;
+    top: 35px;
+    color: #ccc;
+    font-size: 3em;
+}
+
+.testimonial-footer {
+    font-style: italic;
+}
 
 /* TESTIMONIAL BLOCK ENDS */
 
