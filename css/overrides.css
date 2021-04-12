@@ -77,8 +77,11 @@ nav {
 /* EXPLORE BLOCK BEGINS */
 
 .explore {
-    background-color: var(--darkslate);
     height: 20rem;
+}
+
+.explore-index {
+    background-color: var(--darkslate);
 }
 
 .explore-title {
@@ -481,6 +484,22 @@ nav {
 }
 
 @media only screen and (max-width: 995px) {
+
+    nav {
+        display: block;
+    }
+
+    .about-nav {
+        font-size: .75rem;
+    }
+
+    .basic-nav {
+        margin: auto;
+    }
+
+    .basic-nav li {
+        margin: 0;
+    }
 
     #about-picture {
         display: none!important;
