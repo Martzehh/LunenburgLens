@@ -311,15 +311,14 @@ nav {
 }
 
 .peach {
-    background-color: var(--peach);
+    background-color: var(--peach) !important;
 }
+
 /* MAIN PAGE BANNER ENDS */
 
 /* INTRO BANNER BEGINS */
 
 .window {
-    /*width: 100vw;*/
-    /*height: 100vh;*/
     height: 45rem;
     width: 100vw;
     background-color: var(--slate);
@@ -327,6 +326,14 @@ nav {
 }
 
 /* ABOUT PAGE BEGINS */
+
+.window-about {
+    min-height: 45rem;
+    width: 100vw;
+    background-color: var(--slate);
+    overflow: hidden;
+}
+
 
 .about-textbox {
     background-image: url(../imgs/brown_swoosh.svg);
@@ -413,8 +420,19 @@ nav {
     background-size: cover;
 }
 
+
 .about-img {
     background-image: url("../imgs/header-img.jpg");
+}
+
+.about-img-long {
+    margin: 10rem 4rem 5rem auto;
+    width: 30rem;
+    height: 40rem;
+    background-image: url("../imgs/header-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* INTRO BANNER MOBILE ENDS */
@@ -431,6 +449,11 @@ nav {
 
     .index-textbox {
         display: none;
+    }
+
+    .about-img-long {
+        width: 25rem;
+        height: 35rem;
     }
 }
 
@@ -481,6 +504,12 @@ nav {
         font-size: 2.5rem;
         letter-spacing: .75rem;
     }
+
+    .about-img-long {
+        width: 20rem;
+        height: 30rem;
+    }
+
 }
 
 @media only screen and (max-width: 995px) {
@@ -509,6 +538,15 @@ nav {
 
 @media only screen and (max-width: 996px) {
 
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .about-img-long {
+        margin: auto;
+        width: 90%;
+    }
 
 }
 
